@@ -1,9 +1,12 @@
+/* Variables */
 :root {
     --purple: #4e46c2cb;
     --lightgrey: #f8f8f8;
     --greyish-purple: #aaaadd;
 }
 
+
+/* HTML tags */
 body, html {
     margin: 0px;
     height: 100%;
@@ -30,6 +33,23 @@ td {
     opacity: 1;
 }
 
+
+/* background images */
+.top-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bottom-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+/* Header */
 .title {
     display: flex;
     justify-content: center;
@@ -43,18 +63,10 @@ td {
     font-size: large;
 }
 
-.top-image {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
 
-.bottom-image {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
 
+
+/* Main */
 .cards {
     display: flex;
     justify-content: center;
@@ -66,6 +78,7 @@ td {
     text-align: center;
 }
 
+/* Main background */
 .white-background {
     background-color: white;
     width: 270px;
@@ -73,10 +86,6 @@ td {
     border-radius: 10px;
     box-shadow: lightgray 1px 0px 10px 0.5px;
     height: 380px;
-}
-
-.click:hover {
-    background-color: var(--lightgrey);
 }
 
 .selected-background {
@@ -88,6 +97,7 @@ td {
     padding: 20px 0px;
 }
 
+/* Main pricing */
 .pricing-title {
     margin-top: 30px;
     font-size: larger;
@@ -97,6 +107,7 @@ td {
     font-size: 50px;
 }
 
+/* Main learn more button */
 .learn {
     margin-top: 30px;
     background-color: var(--purple);
@@ -126,13 +137,18 @@ div.selected-background .learn:hover {
 }
 
 
-.checkboxes {
-    text-align: center;
-    display: none;
+/* Click other pricing components */
+.click:hover {
+    background-color: var(--lightgrey);
 }
 
 
 
+/* Toggle switch */
+.checkboxes {
+    text-align: center;
+    display: none;
+}
 
 .checkmark {
     position: relative;

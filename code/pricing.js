@@ -18,7 +18,7 @@ let thirdHTML
 //User variables
 let clickOn = false
 let animationOn = false
-let animationSpeed = 0.5
+let animationSpeed = 0.4
 
 
 //Toggle hover effect
