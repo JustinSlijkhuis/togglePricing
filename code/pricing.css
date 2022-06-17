@@ -12,6 +12,7 @@ body, html {
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
+    background-color: aliceblue;
 }
 
 header {
@@ -126,7 +127,7 @@ td {
         color: black;
         border-radius: 10px;
         height: 380px;
-        box-shadow: lightgray 0.5px 0px 10px 0.5px;
+        box-shadow: lightgray 0.8px 0px 10px 0.5px;
         margin-bottom: 20px;
     }
 
