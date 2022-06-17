@@ -10,8 +10,14 @@
 body, html {
     margin: 0px;
     height: 100%;
+    overflow-y: scroll;
     overflow-x: hidden;
-    background-color: aliceblue;
+    background-color: blue;
+}
+
+header {
+    position: relative;
+    z-index: 5;
 }
 
 table {
@@ -133,6 +139,7 @@ td {
         height: 380px;
         padding: 20px 0px;
         margin-bottom: 20px;
+        box-shadow: var(--greyish-purple) 1px 0px 10px 0.5px;
     }
 
     /* background images */
