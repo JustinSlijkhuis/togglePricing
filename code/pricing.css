@@ -1,0 +1,205 @@
+:root {
+    --purple: #4e46c2cb;
+    --lightgrey: #f8f8f8;
+    --greyish-purple: #aaaadd;
+}
+
+body, html {
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+
+table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+tr {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    height: 45px;
+}
+
+td {
+    width: 200px;
+    opacity: 1;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: var(--greyish-purple);
+}
+
+.type-pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+.top-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bottom-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.white-background {
+    background-color: white;
+    width: 270px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: lightgray 1px 0px 10px 0.5px;
+    height: 380px;
+}
+
+.click:hover {
+    background-color: var(--lightgrey);
+}
+
+.selected-background {
+    background-color: var(--purple);
+    width: 290px;
+    color: white;
+    border-radius: 10px;
+    height: 380px;
+    padding: 20px 0px;
+}
+
+.pricing-title {
+    margin-top: 30px;
+    font-size: larger;
+}
+
+.price {
+    font-size: 50px;
+}
+
+.learn {
+    margin-top: 30px;
+    background-color: var(--purple);
+    border-color: transparent;
+    border-radius: 4px;
+    border-width: 1px;
+    color: white;
+    width: 80%;
+    height: 35px;
+}
+
+.learn:hover {
+    background-color: transparent;
+    color: var(--purple);
+    border-color: var(--purple);
+}
+
+div.selected-background .learn {
+    background-color: white;
+    color: var(--purple);
+}
+
+div.selected-background .learn:hover {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+
+.checkboxes {
+    text-align: center;
+    display: none;
+}
+
+
+
+
+.checkmark {
+    position: relative;
+    top: 75px;
+    display: flex;
+    align-items: center;
+    left: 112px;
+}
+
+.slider-switch-text {
+    color: gray;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+.slider-switch:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+.slider-switch {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+
+input:checked + .slider-switch {
+    background-color: var(--purple);
+}
+  
+input:focus + .slider-switch {
+    box-shadow: 0 0 1px #ccc;
+}
+
+input:checked + .slider-switch:before {
+    transform: translateX(26px);
+}
+
+.slider-switch.round {
+    border-radius: 34px;
+}
+  
+.slider-switch.round:before {
+    border-radius: 50%;
+}
