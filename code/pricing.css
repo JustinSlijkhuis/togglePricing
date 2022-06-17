@@ -3,7 +3,6 @@
     --purple: #4e46c2cb;
     --lightgrey: #f8f8f8;
     --greyish-purple: #aaaadd;
-    --white-blue: #f6f6ff;
 }
 
 
@@ -13,7 +12,6 @@ body, html {
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
-    background-color: var(--white-blue);
 }
 
 header {
@@ -128,6 +126,7 @@ td {
         color: black;
         border-radius: 10px;
         height: 380px;
+        box-shadow: lightgray 0.5px 0px 10px 0.5px;
         margin-bottom: 20px;
     }
 
